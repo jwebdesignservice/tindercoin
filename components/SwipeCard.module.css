@@ -410,9 +410,9 @@
 @media (max-width: 768px) {
     .card {
         max-width: calc(100vw - 32px);
-        height: calc(100vh - 420px);
-        max-height: 320px;
-        min-height: 200px;
+        height: calc(100vh - 220px);
+        max-height: 500px;
+        min-height: 350px;
         border-radius: 14px;
     }
 
@@ -488,9 +488,9 @@
 @media (max-width: 480px) {
     .card {
         max-width: calc(100vw - 24px);
-        height: calc(100vh - 440px);
-        max-height: 280px;
-        min-height: 180px;
+        height: calc(100vh - 230px);
+        max-height: 450px;
+        min-height: 320px;
         border-radius: 12px;
         border-width: 2px;
     }
@@ -518,9 +518,9 @@
 @media (max-width: 360px) {
     .card {
         max-width: calc(100vw - 20px);
-        height: calc(100vh - 460px);
-        max-height: 260px;
-        min-height: 160px;
+        height: calc(100vh - 240px);
+        max-height: 400px;
+        min-height: 300px;
     }
 
     .statsGrid {

@@ -87,8 +87,6 @@ export default function CardStack({ characters, onSwipe, onMatch }: CardStackPro
         );
     }
 
-    const topCard = visibleCards[0];
-
     return (
         <div className={styles.container}>
             <div className={styles.cardAreaWrapper}>
@@ -135,54 +133,6 @@ export default function CardStack({ characters, onSwipe, onMatch }: CardStackPro
                     <span className={styles.swipeText}>swipe</span>
                 </div>
             </div>
-
-            {/* Mobile Info Panel - Below the card, only visible on mobile */}
-            {topCard && (
-                <div className={styles.mobileInfoPanel}>
-                    <div className={styles.mobileHeader}>
-                        <h2 className={styles.mobileName}>
-                            {topCard.name}
-                            <span className={styles.mobileAge}>{topCard.age}</span>
-                        </h2>
-                        <p className={styles.mobileOccupation}>{topCard.occupation}</p>
-                    </div>
-
-                    <div className={styles.mobileStats}>
-                        {topCard.peak_mcap && (
-                            <div className={styles.mobileStat}>
-                                <span className={styles.mobileStatLabel}>Peak MC</span>
-                                <span className={styles.mobileStatValue}>{topCard.peak_mcap}</span>
-                            </div>
-                        )}
-                        {topCard.chain && (
-                            <div className={styles.mobileStat}>
-                                <span className={styles.mobileStatLabel}>Chain</span>
-                                <span className={styles.mobileStatValue}>{topCard.chain}</span>
-                            </div>
-                        )}
-                        {topCard.holders && (
-                            <div className={styles.mobileStat}>
-                                <span className={styles.mobileStatLabel}>Holders</span>
-                                <span className={styles.mobileStatValue}>{topCard.holders}</span>
-                            </div>
-                        )}
-                    </div>
-
-                    {topCard.green_flags && topCard.green_flags.length > 0 && (
-                        <div className={styles.mobileFlags}>
-                            {topCard.green_flags.slice(0, 3).map((flag, i) => (
-                                <span key={i} className={styles.mobileGreenFlag}>✓ {flag}</span>
-                            ))}
-                        </div>
-                    )}
-
-                    {topCard.vibe && (
-                        <div className={styles.mobileVibe}>
-                            <span>✨ {topCard.vibe}</span>
-                        </div>
-                    )}
-                </div>
-            )}
 
             <ActionButtons
                 onAction={handleButtonClick}
