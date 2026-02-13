@@ -176,7 +176,7 @@ export default function SwipeCard({ character, onSwipe, isTop, index, exitDirect
                     {character.trait}
                 </div>
 
-                {/* Card Info Gradient */}
+                {/* Card Info Gradient - Desktop only */}
                 <div className={styles.infoGradient}>
                     <div className={styles.mainInfo}>
                         <h2 className={styles.name}>
@@ -191,7 +191,7 @@ export default function SwipeCard({ character, onSwipe, isTop, index, exitDirect
                     </div>
                     <p className={styles.bio}>{character.bio}</p>
 
-                    {/* Tap indicator */}
+                    {/* Tap indicator - Desktop only */}
                     {isTop && (
                         <div className={styles.tapHint}>
                             <span>Tap to see more</span>

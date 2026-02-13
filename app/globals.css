@@ -55,7 +55,8 @@ textarea {
 html,
 body {
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100%;
     font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-weight: 500;
     background: var(--bg-light);
@@ -308,10 +309,46 @@ body {
     animation: heartBeat 1.3s ease-in-out;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* Tablet Responsive */
+@media (max-width: 1024px) {
     :root {
         --header-height: 60px;
         --sidebar-width: 100%;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    :root {
+        --border-playful: 2px solid #21262E;
+        --border-pink: 2px solid #FD297B;
+        --border-white: 2px solid #FFFFFF;
+    }
+
+    .btn {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+
+    .action-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .action-btn {
+        width: 44px;
+        height: 44px;
     }
 }

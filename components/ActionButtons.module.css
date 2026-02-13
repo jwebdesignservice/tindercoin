@@ -1,137 +1,222 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px 20px;
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 3px solid;
-  background: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 3px solid;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 .button:hover:not(:disabled) {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 /* Sizes */
 .small {
-  width: 44px;
-  height: 44px;
+    width: 44px;
+    height: 44px;
 }
 
 .small .icon {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .medium {
-  width: 52px;
-  height: 52px;
+    width: 52px;
+    height: 52px;
 }
 
 .large {
-  width: 64px;
-  height: 64px;
+    width: 64px;
+    height: 64px;
 }
 
 .large .icon {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 /* Button Types */
 .undo {
-  border-color: #FFD700;
-  color: #FFD700;
+    border-color: #FFD700;
+    color: #FFD700;
 }
 
 .undo:hover:not(:disabled) {
-  background: #FFD700;
-  color: #21262E;
+    background: #FFD700;
+    color: #21262E;
 }
 
 .nope {
-  border-color: #FF4458;
-  color: #FF4458;
+    border-color: #FF4458;
+    color: #FF4458;
 }
 
 .nope:hover:not(:disabled) {
-  background: #FF4458;
-  color: white;
+    background: #FF4458;
+    color: white;
 }
 
 .superlike {
-  border-color: #3AB4CC;
-  color: #3AB4CC;
+    border-color: #3AB4CC;
+    color: #3AB4CC;
 }
 
 .superlike:hover:not(:disabled) {
-  background: #3AB4CC;
-  color: white;
+    background: #3AB4CC;
+    color: white;
 }
 
 .like {
-  border-color: #46D89A;
-  color: #46D89A;
+    border-color: #46D89A;
+    color: #46D89A;
 }
 
 .like:hover:not(:disabled) {
-  background: #46D89A;
-  color: white;
+    background: #46D89A;
+    color: white;
 }
 
 .boost {
-  border-color: #A855F7;
-  color: #A855F7;
+    border-color: #A855F7;
+    color: #A855F7;
 }
 
 .boost:hover:not(:disabled) {
-  background: #A855F7;
-  color: white;
+    background: #A855F7;
+    color: white;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .container {
+        gap: 14px;
+        padding: 12px 16px;
+    }
+
+    .small {
+        width: 42px;
+        height: 42px;
+    }
+
+    .medium {
+        width: 50px;
+        height: 50px;
+    }
+
+    .large {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .container {
-    gap: 12px;
-    padding: 16px;
-  }
+    .container {
+        gap: 12px;
+        padding: 12px;
+    }
 
-  .small {
-    width: 40px;
-    height: 40px;
-  }
+    .button {
+        border-width: 2px;
+    }
 
-  .medium {
-    width: 48px;
-    height: 48px;
-  }
+    .small {
+        width: 40px;
+        height: 40px;
+    }
 
-  .large {
-    width: 56px;
-    height: 56px;
-  }
+    .medium {
+        width: 48px;
+        height: 48px;
+    }
 
-  .large .icon {
-    font-size: 1.5rem;
-  }
+    .large {
+        width: 56px;
+        height: 56px;
+    }
+
+    .large .icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .small {
+        width: 36px;
+        height: 36px;
+    }
+
+    .small .icon {
+        font-size: 1rem;
+    }
+
+    .medium {
+        width: 44px;
+        height: 44px;
+    }
+
+    .large {
+        width: 52px;
+        height: 52px;
+    }
+
+    .large .icon {
+        font-size: 1.4rem;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .container {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .small {
+        width: 34px;
+        height: 34px;
+    }
+
+    .medium {
+        width: 40px;
+        height: 40px;
+    }
+
+    .large {
+        width: 48px;
+        height: 48px;
+    }
+
+    .large .icon {
+        font-size: 1.3rem;
+    }
 }

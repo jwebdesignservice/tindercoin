@@ -94,6 +94,10 @@
     color: #656E7B;
 }
 
+/* Mobile Info Panel - Hidden on desktop */
+.mobileInfoPanel {
+    display: none;
+}
 
 .shortcuts {
     position: fixed;
@@ -192,6 +196,24 @@
     box-shadow: 0 6px 20px rgba(253, 41, 123, 0.4);
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .cardArea {
+        width: 340px;
+        min-width: 340px;
+        height: 580px;
+    }
+
+    .swipeArrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cardAreaWrapper {
+        gap: 16px;
+    }
+}
+
 /* Hide shortcuts on tablet and below */
 @media (max-width: 1200px) {
     .shortcuts {
@@ -202,16 +224,17 @@
 /* Mobile */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 8px;
         gap: 6px;
     }
 
     .cardArea {
         width: 100%;
         min-width: unset;
-        max-width: 380px;
-        height: calc(100vh - 260px);
-        max-height: 580px;
+        max-width: calc(100vw - 32px);
+        height: calc(100vh - 280px);
+        max-height: 480px;
+        min-height: 350px;
     }
 
     .swipeHint {
@@ -221,5 +244,259 @@
     .cardAreaWrapper {
         gap: 0;
         width: 100%;
+    }
+
+    /* Mobile Info Panel - Show on mobile */
+    .mobileInfoPanel {
+        display: block;
+        width: 100%;
+        max-width: calc(100vw - 32px);
+        background: white;
+        border: 2px solid #21262E;
+        border-radius: 12px;
+        padding: 12px 14px;
+        margin-top: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobileHeader {
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    .mobileName {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #21262E;
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        margin-bottom: 2px;
+    }
+
+    .mobileAge {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #656E7B;
+    }
+
+    .mobileOccupation {
+        font-size: 0.8rem;
+        color: #656E7B;
+    }
+
+    .mobileStats {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    .mobileStat {
+        flex: 1;
+        background: linear-gradient(135deg, #FD297B 0%, #FF5864 100%);
+        border: 2px solid #21262E;
+        border-radius: 8px;
+        padding: 6px 4px;
+        text-align: center;
+        color: white;
+    }
+
+    .mobileStatLabel {
+        display: block;
+        font-size: 0.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        opacity: 0.9;
+        margin-bottom: 2px;
+    }
+
+    .mobileStatValue {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    .mobileFlags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+
+    .mobileGreenFlag {
+        background: #E8F8F0;
+        color: #1B7D46;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        border: 1.5px solid #46D89A;
+    }
+
+    .mobileVibe {
+        margin-bottom: 0;
+    }
+
+    .mobileVibe span {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(253, 41, 123, 0.15));
+        color: #A855F7;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border: 1.5px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .emptyState {
+        padding: 40px 24px;
+        max-width: calc(100vw - 32px);
+        border-radius: 14px;
+    }
+
+    .emptyIcon {
+        font-size: 3rem;
+    }
+
+    .emptyTitle {
+        font-size: 1.3rem;
+    }
+
+    .emptyText {
+        font-size: 0.9rem;
+    }
+
+    .resetButton {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 6px;
+    }
+
+    .cardArea {
+        max-width: calc(100vw - 24px);
+        height: calc(100vh - 300px);
+        max-height: 420px;
+        min-height: 300px;
+    }
+
+    .mobileInfoPanel {
+        max-width: calc(100vw - 24px);
+        padding: 10px 12px;
+    }
+
+    .mobileName {
+        font-size: 1.1rem;
+    }
+
+    .mobileAge {
+        font-size: 0.95rem;
+    }
+
+    .mobileStats {
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .mobileStat {
+        padding: 5px 3px;
+        border-radius: 6px;
+    }
+
+    .mobileStatLabel {
+        font-size: 0.45rem;
+    }
+
+    .mobileStatValue {
+        font-size: 0.65rem;
+    }
+
+    .mobileFlags {
+        gap: 4px;
+        margin-bottom: 6px;
+    }
+
+    .mobileGreenFlag {
+        font-size: 0.6rem;
+        padding: 3px 6px;
+    }
+
+    .mobileVibe span {
+        font-size: 0.65rem;
+        padding: 3px 8px;
+    }
+
+    .emptyState {
+        padding: 32px 20px;
+        border-width: 2px;
+    }
+
+    .emptyIcon {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+
+    .emptyTitle {
+        font-size: 1.2rem;
+    }
+
+    .emptyText {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .resetButton {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+        border-width: 2px;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .cardArea {
+        max-width: calc(100vw - 20px);
+        height: calc(100vh - 320px);
+        max-height: 380px;
+        min-height: 280px;
+    }
+
+    .mobileInfoPanel {
+        max-width: calc(100vw - 20px);
+        padding: 8px 10px;
+    }
+
+    .mobileHeader {
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+    }
+
+    .mobileName {
+        font-size: 1rem;
+    }
+
+    .mobileStats {
+        gap: 3px;
+    }
+
+    .mobileFlags {
+        gap: 3px;
+    }
+
+    .mobileGreenFlag {
+        font-size: 0.55rem;
+        padding: 2px 5px;
+    }
+
+    /* Only show 2 flags on extra small */
+    .mobileFlags .mobileGreenFlag:nth-child(n+3) {
+        display: none;
     }
 }

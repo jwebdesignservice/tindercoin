@@ -272,8 +272,37 @@
     box-shadow: 0 6px 20px rgba(253, 41, 123, 0.4);
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .main {
+        min-height: calc(100vh - 60px);
+        padding-bottom: 120px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
+    .main {
+        min-height: calc(100vh - 60px);
+    }
+
+    .tabs {
+        border-bottom-width: 2px;
+    }
+
+    .tab {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+
+    .tab:first-child {
+        border-right-width: 2px;
+    }
+
     .content {
         padding: 16px;
     }
@@ -282,8 +311,148 @@
         gap: 10px;
     }
 
+    .matchCard {
+        border-width: 2px;
+        border-radius: 10px;
+    }
+
     .matchName {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 24px 10px 10px;
+    }
+
+    .newBadge {
+        font-size: 0.6rem;
+        padding: 3px 8px;
+        top: 8px;
+        left: 8px;
+    }
+
+    .onlineDot {
+        width: 12px;
+        height: 12px;
+        top: 8px;
+        right: 8px;
+        border-width: 2px;
+    }
+
+    .conversationItem {
+        padding: 14px 16px;
+        gap: 12px;
+        border-width: 2px;
+        border-radius: 12px;
+    }
+
+    .convAvatar {
+        width: 50px !important;
+        height: 50px !important;
+        border-width: 2px;
+    }
+
+    .convName {
+        font-size: 1rem;
+    }
+
+    .convPreview {
+        font-size: 0.85rem;
+    }
+
+    .emptyState {
+        padding: 40px 16px;
+        border-width: 2px;
+        border-radius: 16px;
+    }
+
+    .emptyIcon {
+        font-size: 3rem;
+    }
+
+    .emptyState h3 {
+        font-size: 1.3rem;
+    }
+
+    .emptyState p {
+        font-size: 0.9rem;
+    }
+
+    .swipeButton {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        border-width: 2px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .content {
+        padding: 12px;
+    }
+
+    .tab {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .matchesGrid {
+        gap: 8px;
+    }
+
+    .matchCard {
+        border-radius: 8px;
+    }
+
+    .matchName {
+        font-size: 0.85rem;
+        padding: 20px 8px 8px;
+    }
+
+    .conversationItem {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .convAvatar {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .convName {
+        font-size: 0.95rem;
+    }
+
+    .convPreview {
+        font-size: 0.8rem;
+    }
+
+    .convTime {
+        font-size: 0.75rem;
+    }
+
+    .emptyState {
+        padding: 32px 14px;
+    }
+
+    .emptyIcon {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+
+    .emptyState h3 {
+        font-size: 1.15rem;
+    }
+
+    .emptyState p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .matchesGrid {
+        gap: 6px;
+    }
+
+    .matchName {
+        font-size: 0.8rem;
     }
 }

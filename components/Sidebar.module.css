@@ -280,7 +280,27 @@
     line-height: 1.5;
 }
 
-/* Mobile Hidden */
+/* Smaller Desktop */
+@media (max-width: 1280px) {
+    .sidebar {
+        width: 280px;
+        min-width: 280px;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .matchesGrid {
+        gap: 6px;
+    }
+
+    .profileSection {
+        padding: 12px;
+    }
+}
+
+/* Tablet - Hide sidebar */
 @media (max-width: 1024px) {
     .sidebar {
         display: none;

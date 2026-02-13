@@ -398,29 +398,68 @@
     font-size: 0.8rem;
 }
 
-/* Mobile Adjustments */
+/* Tablet */
+@media (max-width: 1024px) {
+    .card {
+        max-width: 340px;
+        height: 580px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .card {
-        max-width: calc(100vw - 40px);
-        height: calc(100vh - 240px);
-        max-height: 580px;
-    }
-
-    .name {
-        font-size: 1.5rem;
-    }
-
-    .age {
-        font-size: 1.2rem;
+        max-width: calc(100vw - 32px);
+        height: calc(100vh - 280px);
+        max-height: 480px;
+        min-height: 350px;
+        border-radius: 14px;
     }
 
     .indicator {
-        font-size: 1.5rem;
-        padding: 8px 16px;
+        font-size: 1.4rem;
+        padding: 8px 14px;
+        top: 30px;
+    }
+
+    .traitBadge {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+        top: 12px;
+        left: 12px;
+    }
+
+    .infoGradient {
+        padding: 60px 14px 14px;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    .age {
+        font-size: 1rem;
+    }
+
+    .occupation {
+        font-size: 0.8rem;
+    }
+
+    .distance {
+        font-size: 0.75rem;
+    }
+
+    .bio {
+        display: none;
+    }
+
+    .tapHint {
+        display: none;
     }
 
     .statsGrid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
 
     .expandedContent {
@@ -428,14 +467,71 @@
     }
 
     .statItem {
-        padding: 8px 4px;
+        padding: 8px 6px;
     }
 
     .statLabel {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
     }
 
     .statValue {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+    }
+
+    .sectionTitle {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .card {
+        max-width: calc(100vw - 24px);
+        height: calc(100vh - 300px);
+        max-height: 420px;
+        min-height: 300px;
+        border-radius: 12px;
+        border-width: 2px;
+    }
+
+    .indicator {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+        border-width: 3px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .age {
+        font-size: 0.95rem;
+    }
+
+    .infoGradient {
+        padding: 50px 12px 12px;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .card {
+        max-width: calc(100vw - 20px);
+        height: calc(100vh - 320px);
+        max-height: 380px;
+        min-height: 280px;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .infoGradient {
+        padding: 40px 10px 10px;
     }
 }

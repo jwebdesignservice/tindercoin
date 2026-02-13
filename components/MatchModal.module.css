@@ -1,169 +1,285 @@
 .overlay {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(33, 38, 46, 0.95) 0%,
-    rgba(253, 41, 123, 0.9) 50%,
-    rgba(255, 88, 100, 0.9) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2000;
-  padding: 20px;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(33, 38, 46, 0.95) 0%,
+            rgba(253, 41, 123, 0.9) 50%,
+            rgba(255, 88, 100, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
 }
 
 .confettiContainer {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .confetti {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
-  max-width: 400px;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .title {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3rem;
-  color: white;
-  text-shadow: 3px 3px 0 #21262E;
-  margin-bottom: 16px;
-  line-height: 1.1;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 3px 0 #21262E;
+    margin-bottom: 16px;
+    line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 32px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
 }
 
 .location {
-  font-weight: 700;
-  color: white;
+    font-weight: 700;
+    color: white;
 }
 
 .profiles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
 }
 
 .profilePic {
-  position: relative;
+    position: relative;
 }
 
 .avatar {
-  border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 .heartBadge {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  border: 3px solid #21262E;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin: 0 -15px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 3px solid #21262E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0 -15px;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-  max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 280px;
 }
 
 .sendButton {
-  background: linear-gradient(135deg, #FD297B 0%, #FF5864 50%, #FF655B 100%);
-  color: white;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 16px 32px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #FD297B 0%, #FF5864 50%, #FF655B 100%);
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sendButton:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .keepButton {
-  background: transparent;
-  color: white;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 14px 32px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .keepButton:hover {
-  background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .funText {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .overlay {
+        padding: 16px;
+    }
+
+    .modal {
+        padding: 36px 24px;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .profiles {
+        margin-bottom: 32px;
+    }
+
+    .avatar {
+        width: 110px !important;
+        height: 110px !important;
+        border-width: 3px;
+    }
+
+    .heartBadge {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .buttons {
+        max-width: 260px;
+    }
+
+    .sendButton {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+
+    .keepButton {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+
+    .funText {
+        font-size: 1.3rem;
+        margin-top: 24px;
+    }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .modal {
-    padding: 30px 20px;
-  }
+    .overlay {
+        padding: 12px;
+    }
 
-  .title {
-    font-size: 2.5rem;
-  }
+    .modal {
+        padding: 28px 18px;
+    }
 
-  .avatar {
-    width: 100px;
-    height: 100px;
-  }
+    .title {
+        font-size: 2.2rem;
+    }
 
-  .heartBadge {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
+    .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .profiles {
+        margin-bottom: 28px;
+        gap: 8px;
+    }
+
+    .avatar {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .heartBadge {
+        width: 40px;
+        height: 40px;
+        font-size: 1.15rem;
+        border-width: 2px;
+        margin: 0 -12px;
+    }
+
+    .buttons {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .sendButton {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        border-width: 2px;
+    }
+
+    .keepButton {
+        padding: 10px 24px;
+        font-size: 0.85rem;
+        border-width: 2px;
+    }
+
+    .funText {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .title {
+        font-size: 1.9rem;
+    }
+
+    .avatar {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
+    .heartBadge {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .sendButton,
+    .keepButton {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
 }

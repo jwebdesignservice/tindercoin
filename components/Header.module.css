@@ -121,15 +121,40 @@
 }
 
 
-/* Mobile Responsive */
+/* Tablet */
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 16px;
+    }
+
+    .container {
+        gap: 16px;
+    }
+
+    .caButton {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .socialLink {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+    .header {
+        padding: 0 12px;
+    }
+
     .container {
         height: 60px;
         gap: 10px;
     }
 
     .tokenName {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .caButton {
@@ -138,7 +163,7 @@
     }
 
     .caAddress {
-        max-width: 80px;
+        max-width: 70px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -146,6 +171,7 @@
     .socialLink {
         width: 36px;
         height: 36px;
+        border-width: 2px;
     }
 
     .socialLink svg {
@@ -155,20 +181,73 @@
 
     .flameIcon {
         padding: 4px;
+        border-width: 2px;
     }
 
     .flameIcon svg {
         width: 24px;
         height: 24px;
     }
+
+    .socialLinks {
+        gap: 8px;
+    }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .container {
+        height: 56px;
+        gap: 8px;
+    }
+
+    .tokenName {
+        font-size: 1.1rem;
+    }
+
     .caButton {
         display: none;
     }
 
     .socialLinks {
-        gap: 8px;
+        gap: 6px;
+    }
+
+    .socialLink {
+        width: 32px;
+        height: 32px;
+    }
+
+    .socialLink svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .flameIcon {
+        padding: 3px;
+    }
+
+    .flameIcon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Extra Small */
+@media (max-width: 360px) {
+    .tokenName {
+        font-size: 1rem;
+    }
+
+    .tinder {
+        display: none;
+    }
+
+    .coin {
+        margin-left: 0;
     }
 }
