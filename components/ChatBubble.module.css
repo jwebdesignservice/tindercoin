@@ -1,0 +1,55 @@
+.bubbleContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin-bottom: 12px;
+}
+
+.user {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.match {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.bubble {
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: 3px solid #21262E;
+  word-wrap: break-word;
+}
+
+.user .bubble {
+  background: linear-gradient(135deg, #FD297B 0%, #FF5864 100%);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.match .bubble {
+  background: #F0F2F4;
+  color: #21262E;
+  border-bottom-left-radius: 4px;
+}
+
+.message {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  color: #656E7B;
+  margin-top: 4px;
+  padding: 0 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bubbleContainer {
+    max-width: 85%;
+  }
+}

@@ -1,0 +1,317 @@
+/* Tinder Meme Coin - Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Permanent+Marker&display=swap');
+
+:root {
+    /* Tinder Colors */
+    --tinder-gradient: linear-gradient(135deg, #FD297B 0%, #FF5864 50%, #FF655B 100%);
+    --tinder-pink: #FD297B;
+    --tinder-coral: #FF5864;
+    --tinder-orange: #FF655B;
+    --tinder-gold: #FFD700;
+    --tinder-teal: #3AB4CC;
+    --tinder-green: #46D89A;
+    --tinder-red: #FF4458;
+
+    /* Background & Text */
+    --bg-light: #F0F2F4;
+    --bg-dark: #1A1A2E;
+    --bg-card: #FFFFFF;
+    --text-dark: #21262E;
+    --text-muted: #656E7B;
+    --text-light: #FFFFFF;
+
+    /* Playful Border */
+    --border-playful: 3px solid #21262E;
+    --border-pink: 3px solid #FD297B;
+    --border-white: 3px solid #FFFFFF;
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.15);
+    --shadow-button: 0 4px 15px rgba(253, 41, 123, 0.4);
+    --shadow-hover: 0 8px 30px rgba(253, 41, 123, 0.5);
+
+    /* Sizing */
+    --header-height: 70px;
+    --sidebar-width: 320px;
+    --card-radius: 12px;
+    --button-radius: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ensure buttons, inputs, and other form elements inherit font */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tinder-gradient);
+    border-radius: 4px;
+}
+
+/* Utility Classes */
+.gradient-text {
+    background: var(--tinder-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-bg {
+    background: var(--tinder-gradient);
+}
+
+.playful-border {
+    border: var(--border-playful);
+}
+
+.pink-border {
+    border: var(--border-pink);
+}
+
+/* Button Base Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    border-radius: var(--button-radius);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: var(--border-playful);
+}
+
+.btn-primary {
+    background: var(--tinder-gradient);
+    color: var(--text-light);
+    box-shadow: var(--shadow-button);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--tinder-pink);
+    border: var(--border-pink);
+}
+
+.btn-outline:hover {
+    background: var(--tinder-gradient);
+    color: var(--text-light);
+}
+
+/* Action Button Circles */
+.action-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: var(--border-playful);
+    background: var(--bg-card);
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+.action-btn.nope {
+    border-color: var(--tinder-red);
+    color: var(--tinder-red);
+}
+
+.action-btn.nope:hover {
+    background: var(--tinder-red);
+    color: white;
+}
+
+.action-btn.like {
+    border-color: var(--tinder-green);
+    color: var(--tinder-green);
+}
+
+.action-btn.like:hover {
+    background: var(--tinder-green);
+    color: white;
+}
+
+.action-btn.superlike {
+    border-color: var(--tinder-teal);
+    color: var(--tinder-teal);
+}
+
+.action-btn.superlike:hover {
+    background: var(--tinder-teal);
+    color: white;
+}
+
+.action-btn.boost {
+    border-color: #A855F7;
+    color: #A855F7;
+}
+
+.action-btn.boost:hover {
+    background: #A855F7;
+    color: white;
+}
+
+.action-btn.undo {
+    border-color: var(--tinder-gold);
+    color: var(--tinder-gold);
+}
+
+.action-btn.undo:hover {
+    background: var(--tinder-gold);
+    color: var(--text-dark);
+}
+
+/* Card Styles */
+.card {
+    background: var(--bg-card);
+    border-radius: var(--card-radius);
+    border: var(--border-playful);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+/* Profile Picture Circle */
+.avatar {
+    border-radius: 50%;
+    border: var(--border-playful);
+    object-fit: cover;
+}
+
+/* Meme-style Text */
+.meme-text {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Animations */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.3);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.3);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+@keyframes confetti {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-500px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-slideUp {
+    animation: slideUp 0.5s ease-out;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.animate-heartBeat {
+    animation: heartBeat 1.3s ease-in-out;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 60px;
+        --sidebar-width: 100%;
+    }
+}

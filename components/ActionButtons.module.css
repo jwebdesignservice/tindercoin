@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 3px solid;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Sizes */
+.small {
+  width: 44px;
+  height: 44px;
+}
+
+.small .icon {
+  font-size: 1.2rem;
+}
+
+.medium {
+  width: 52px;
+  height: 52px;
+}
+
+.large {
+  width: 64px;
+  height: 64px;
+}
+
+.large .icon {
+  font-size: 1.8rem;
+}
+
+/* Button Types */
+.undo {
+  border-color: #FFD700;
+  color: #FFD700;
+}
+
+.undo:hover:not(:disabled) {
+  background: #FFD700;
+  color: #21262E;
+}
+
+.nope {
+  border-color: #FF4458;
+  color: #FF4458;
+}
+
+.nope:hover:not(:disabled) {
+  background: #FF4458;
+  color: white;
+}
+
+.superlike {
+  border-color: #3AB4CC;
+  color: #3AB4CC;
+}
+
+.superlike:hover:not(:disabled) {
+  background: #3AB4CC;
+  color: white;
+}
+
+.like {
+  border-color: #46D89A;
+  color: #46D89A;
+}
+
+.like:hover:not(:disabled) {
+  background: #46D89A;
+  color: white;
+}
+
+.boost {
+  border-color: #A855F7;
+  color: #A855F7;
+}
+
+.boost:hover:not(:disabled) {
+  background: #A855F7;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .small {
+    width: 40px;
+    height: 40px;
+  }
+
+  .medium {
+    width: 48px;
+    height: 48px;
+  }
+
+  .large {
+    width: 56px;
+    height: 56px;
+  }
+
+  .large .icon {
+    font-size: 1.5rem;
+  }
+}

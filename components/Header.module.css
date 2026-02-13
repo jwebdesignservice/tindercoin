@@ -1,0 +1,174 @@
+.header {
+    background: linear-gradient(135deg, #FD297B 0%, #FF5864 50%, #FF655B 100%);
+    border-bottom: 3px solid #21262E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    gap: 20px;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flameIcon {
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    border: 3px solid #21262E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tokenName {
+    font-size: 1.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: baseline;
+}
+
+.tinder {
+    color: white;
+    text-shadow: 2px 2px 0 #21262E;
+}
+
+.coin {
+    font-family: 'Permanent Marker', cursive;
+    color: #FFD700;
+    text-shadow: 2px 2px 0 #21262E;
+    margin-left: 4px;
+}
+
+.caButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #21262E;
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.caButton:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.caButton:active {
+    transform: scale(0.98);
+}
+
+.caLabel {
+    font-weight: 700;
+    color: #FD297B;
+}
+
+.caAddress {
+    font-family: monospace;
+    color: #21262E;
+    font-weight: 500;
+}
+
+.copyIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #656E7B;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #21262E;
+    border-radius: 50%;
+    color: #21262E;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.socialLink:hover {
+    background: #21262E;
+    color: white;
+    transform: scale(1.1) rotate(-5deg);
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        height: 60px;
+        gap: 10px;
+    }
+
+    .tokenName {
+        font-size: 1.2rem;
+    }
+
+    .caButton {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+
+    .caAddress {
+        max-width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .socialLink {
+        width: 36px;
+        height: 36px;
+    }
+
+    .socialLink svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .flameIcon {
+        padding: 4px;
+    }
+
+    .flameIcon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caButton {
+        display: none;
+    }
+
+    .socialLinks {
+        gap: 8px;
+    }
+}

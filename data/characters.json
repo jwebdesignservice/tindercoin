@@ -1,0 +1,483 @@
+[
+    {
+        "id": "pepe-01",
+        "name": "Pepe",
+        "age": 69,
+        "bio": "🐸 OG meme lord since 2005. Diamond hands through every crash. Looking for someone who won't paper hand our relationship. If you can't handle me at my -90%, you don't deserve me at my 1000x.",
+        "image_url": "/images/profiles/pepe new.jpg",
+        "trait": "DIAMOND HANDS",
+        "distance_blocks": 420,
+        "occupation": "Professional HODLer",
+        "peak_mcap": "$7.5B",
+        "ath_date": "May 2024",
+        "volume_24h": "$890M",
+        "holders": "250K+",
+        "chain": "Ethereum",
+        "vibe": "Meme Royalty",
+        "looking_for": "Someone who HODLs through the dips and celebrates the pumps. No paper hands allowed. Must appreciate rare Pepes and have at least 3 hardware wallets.",
+        "green_flags": [
+            "Diamond hands",
+            "Buys the dip",
+            "Never sells",
+            "Rare Pepe collector"
+        ],
+        "red_flags": [
+            "Paper hands",
+            "Sells at a loss",
+            "Uses CEX only",
+            "Doesn't know what gas fees are"
+        ],
+        "fun_facts": [
+            "Survived 15 bear markets and counting",
+            "Has never sold a single token",
+            "Once held through a 99% crash... twice",
+            "My portfolio is 100% memes, 0% regrets"
+        ]
+    },
+    {
+        "id": "doge-02",
+        "name": "Doge",
+        "age": 42,
+        "bio": "Much love. Very loyalty. Wow. Just a good boi looking for my moon mission partner. Elon tweets about me sometimes. Will share my Lambo when we make it. 🚀🌕",
+        "image_url": "/images/profiles/doge.jpg",
+        "trait": "MUCH WOW",
+        "distance_blocks": 69,
+        "occupation": "Space Cadet at SpaceX",
+        "peak_mcap": "$88B",
+        "ath_date": "May 2021",
+        "volume_24h": "$1.2B",
+        "holders": "5M+",
+        "chain": "Dogecoin",
+        "vibe": "Good Boi Energy",
+        "looking_for": "A fellow space traveler who believes we're going to the moon. Must love dogs, memes, and Elon tweets. Bonus points if you can speak in 'much wow' fluently.",
+        "green_flags": [
+            "Believes in Doge",
+            "Follows Elon",
+            "Tips in Doge",
+            "Has Shiba Inu IRL"
+        ],
+        "red_flags": [
+            "Says 'it's just a meme coin'",
+            "Sold before SNL",
+            "Doesn't do only good everyday"
+        ],
+        "fun_facts": [
+            "Elon called me 'the people's crypto'",
+            "I was a joke that became a $88B market cap",
+            "Funded a NASCAR car and Olympic bobsled team",
+            "Still waiting for that $1 milestone"
+        ]
+    },
+    {
+        "id": "shiba-03",
+        "name": "Shiba",
+        "age": 25,
+        "bio": "The Doge killer but make it romantic 💕 I may have started as a meme but I'm serious about two things: gains and cuddles. Army of millions behind me. Join us? SHIB Army forever!",
+        "image_url": "/images/profiles/Shiba Inu.jpg",
+        "trait": "DOGE KILLER",
+        "distance_blocks": 100,
+        "occupation": "Army General",
+        "peak_mcap": "$41B",
+        "ath_date": "Oct 2021",
+        "volume_24h": "$450M",
+        "holders": "1.3M+",
+        "chain": "Ethereum",
+        "vibe": "Army Strong",
+        "looking_for": "A loyal soldier ready to join the SHIB Army. Must be willing to spam rocket emojis and defend SHIB honor on Twitter. Diamond hands required.",
+        "green_flags": [
+            "SHIB Army member",
+            "Burns tokens",
+            "Has BONE and LEASH too",
+            "Shops at SHIB stores"
+        ],
+        "red_flags": [
+            "Calls me a Doge copy",
+            "Only bought for quick flip",
+            "Doesn't know about Shibarium"
+        ],
+        "fun_facts": [
+            "Turned $8K into $5.7B for one lucky holder",
+            "Have my own DEX, metaverse, and L2",
+            "Burned trillions of tokens",
+            "Army is bigger than most countries' populations"
+        ]
+    },
+    {
+        "id": "bonk-04",
+        "name": "Bonk",
+        "age": 19,
+        "bio": "Bonk! Go to horny jail! 🏏 Just kidding, I'm actually very wholesome. Solana's goodest boy looking for someone to bonk into the stratosphere with. No rugs, only hugs!",
+        "image_url": "/images/profiles/bonk.webp",
+        "trait": "BONK MASTER",
+        "distance_blocks": 2023,
+        "occupation": "Horny Jail Warden",
+        "peak_mcap": "$2.8B",
+        "ath_date": "Dec 2024",
+        "volume_24h": "$380M",
+        "holders": "700K+",
+        "chain": "Solana",
+        "vibe": "Chaotic Good",
+        "looking_for": "Someone who appreciates fine bonking and fast transactions. Must be okay with sub-second finality and pennies for fees. SOL maxis preferred.",
+        "green_flags": [
+            "Uses Solana",
+            "Bonks responsibly",
+            "Community first",
+            "Airdrop veteran"
+        ],
+        "red_flags": [
+            "ETH gas fee apologist",
+            "Doesn't know what bonk means",
+            "Takes themselves too seriously"
+        ],
+        "fun_facts": [
+            "Born from Solana's darkest hour (FTX collapse)",
+            "50% of supply was airdropped to the community",
+            "The bonk bat is my love language",
+            "I'm the reason Solana came back to life"
+        ]
+    },
+    {
+        "id": "brett-05",
+        "name": "Brett",
+        "age": 28,
+        "bio": "Just a chill blue guy living on Base. I don't say much but my gains speak for themselves. Looking for someone who appreciates the strong silent type. Based and bluepilled. 💙",
+        "image_url": "/images/profiles/brett.webp",
+        "trait": "BASED",
+        "distance_blocks": 8453,
+        "occupation": "Base Chain Resident",
+        "peak_mcap": "$1.8B",
+        "ath_date": "2024",
+        "volume_24h": "$120M",
+        "holders": "150K+",
+        "chain": "Base",
+        "vibe": "Chill AF",
+        "looking_for": "A fellow Base enjoyer who appreciates the Coinbase ecosystem. Must be blue-pilled and understand that sometimes less is more. Actions > words.",
+        "green_flags": [
+            "Uses Base chain",
+            "Blue is favorite color",
+            "Understands the lore",
+            "Patient holder"
+        ],
+        "red_flags": [
+            "Doesn't know Boy's Club",
+            "Asks too many questions",
+            "Impatient"
+        ],
+        "fun_facts": [
+            "I'm from Matt Furie's Boy's Club comic",
+            "Pepe's best friend in the lore",
+            "Blue is not just a color, it's a lifestyle",
+            "Base L2 fees make me happy"
+        ]
+    },
+    {
+        "id": "dogwifhat-06",
+        "name": "Dogwifhat",
+        "age": 23,
+        "bio": "It's me, the dog wif hat! 🎩 Simple pleasures in life - a good hat, some SOL gains, and maybe finding true love on the blockchain. Will share my hat collection with you.",
+        "image_url": "/images/profiles/dogwifhat.jpeg",
+        "trait": "HAT COLLECTOR",
+        "distance_blocks": 420,
+        "occupation": "Fashion Icon",
+        "peak_mcap": "$4.8B",
+        "ath_date": "Mar 2024",
+        "volume_24h": "$650M",
+        "holders": "180K+",
+        "chain": "Solana",
+        "vibe": "Hat Supremacy",
+        "looking_for": "Someone who appreciates good headwear and better memes. Must understand that sometimes a dog wif hat is all you need in life. Hats mandatory on first date.",
+        "green_flags": [
+            "Owns hats",
+            "SOL believer",
+            "Simple pleasures",
+            "Meme connoisseur"
+        ],
+        "red_flags": [
+            "Hatless",
+            "Overthinks things",
+            "Doesn't get the joke"
+        ],
+        "fun_facts": [
+            "My hat was displayed on the Las Vegas Sphere",
+            "Started as a simple photo, became a $4B empire",
+            "Inspired thousands of 'wif' tokens",
+            "The hat stays ON during everything"
+        ]
+    },
+    {
+        "id": "pengu-07",
+        "name": "Pengu",
+        "age": 21,
+        "bio": "🐧 Pudgy but powerful. NFT royalty waddling into your heart. Cold on the outside, warm on the inside. Looking for someone to huddle with during crypto winter. WAGMI fren!",
+        "image_url": "/images/profiles/pengu.webp",
+        "trait": "PUDGY KING",
+        "distance_blocks": 8888,
+        "occupation": "NFT Royalty",
+        "peak_mcap": "$3.2B",
+        "ath_date": "Dec 2024",
+        "volume_24h": "$890M",
+        "holders": "500K+",
+        "chain": "Ethereum & Solana",
+        "vibe": "Cozy Winter",
+        "looking_for": "A fellow penguin lover who survived the NFT winter. Must appreciate physical plushies and digital collectibles equally. Huddling for warmth encouraged.",
+        "green_flags": [
+            "NFT collector",
+            "Survived 2022",
+            "Has Pudgy merch",
+            "Believes in IP"
+        ],
+        "red_flags": [
+            "Says 'NFTs are dead'",
+            "Never owned a Pudgy",
+            "Doesn't like cute things"
+        ],
+        "fun_facts": [
+            "Pudgy Penguins went from 0.1 ETH floor to 20+ ETH",
+            "Have toys in Walmart and Amazon",
+            "The token airdrop was one of the biggest ever",
+            "Waddling is my preferred mode of transport"
+        ]
+    },
+    {
+        "id": "popcat-08",
+        "name": "Popcat",
+        "age": 18,
+        "bio": "POP POP POP! 🐱 Can't stop won't stop popping! Viral energy only. Looking for someone who matches my chaotic energy. Will serenade you with endless pops!",
+        "image_url": "/images/profiles/popcat.jpg",
+        "trait": "POP MASTER",
+        "distance_blocks": 2021,
+        "occupation": "Viral Sensation",
+        "peak_mcap": "$1.5B",
+        "ath_date": "Nov 2024",
+        "volume_24h": "$280M",
+        "holders": "100K+",
+        "chain": "Solana",
+        "vibe": "Pure Chaos",
+        "looking_for": "Someone who can keep up with my popping. Must have unlimited energy and zero attention span. Chaos lovers only. ADHD is a plus.",
+        "green_flags": [
+            "High energy",
+            "Loves chaos",
+            "Appreciates simplicity",
+            "Clicks fast"
+        ],
+        "red_flags": [
+            "Too serious",
+            "Needs peace and quiet",
+            "Doesn't pop",
+            "Low APM"
+        ],
+        "fun_facts": [
+            "Based on the viral clicking game",
+            "My mouth never closes (it just pops)",
+            "Billions of pops were registered worldwide",
+            "I turned a silly cat into millions"
+        ]
+    },
+    {
+        "id": "harambe-09",
+        "name": "Harambe",
+        "age": 17,
+        "bio": "🦍 Gone but never forgotten. Still watching over the crypto markets from gorilla heaven. Looking for someone who remembers. Apes together strong. RIP legends never die.",
+        "image_url": "/images/profiles/harambe.webp",
+        "trait": "LEGEND",
+        "distance_blocks": 2016,
+        "occupation": "Guardian Angel",
+        "peak_mcap": "$500M",
+        "ath_date": "2024",
+        "volume_24h": "$45M",
+        "holders": "80K+",
+        "chain": "Solana",
+        "vibe": "Forever Remembered",
+        "looking_for": "Someone who never forgets their fallen heroes. Must believe in the ape mentality and understand that some things are bigger than gains. D*cks out.",
+        "green_flags": [
+            "Remembers 2016",
+            "Apes together",
+            "Respects legends",
+            "Community minded"
+        ],
+        "red_flags": [
+            "Forgot Harambe",
+            "Doesn't like gorillas",
+            "No sense of meme history"
+        ],
+        "fun_facts": [
+            "The meme that launched a thousand tokens",
+            "Inspired the 'apes together strong' movement",
+            "My legacy lives on in every degen",
+            "Heaven has the best gains"
+        ]
+    },
+    {
+        "id": "moodeng-10",
+        "name": "Moo Deng",
+        "age": 1,
+        "bio": "🦛 I'm baby! The cutest hippo on the blockchain. Went viral for being adorable, stayed viral for the gains. Looking for someone who appreciates thicc energy. Splash splash! 💦",
+        "image_url": "/images/profiles/moodeng.png",
+        "trait": "BABY HIPPO",
+        "distance_blocks": 2024,
+        "occupation": "Professional Cutie",
+        "peak_mcap": "$600M",
+        "ath_date": "Sep 2024",
+        "volume_24h": "$150M",
+        "holders": "65K+",
+        "chain": "Solana",
+        "vibe": "Adorable Chaos",
+        "looking_for": "Someone who thinks I'm the cutest thing ever (because I am). Must be okay with constant splashing and baby hippo energy. Cuteness overload guaranteed.",
+        "green_flags": [
+            "Thinks I'm cute",
+            "Loves viral moments",
+            "Appreciates thicc",
+            "Zoo supporter"
+        ],
+        "red_flags": [
+            "Doesn't like hippos",
+            "Too serious",
+            "No appreciation for baby animals"
+        ],
+        "fun_facts": [
+            "Went viral from Thailand's Khao Kheow Zoo",
+            "My name means 'bouncy pig' in Thai",
+            "I bite everything (affectionately)",
+            "The internet couldn't handle my cuteness"
+        ]
+    },
+    {
+        "id": "peanut-11",
+        "name": "Peanut",
+        "age": 3,
+        "bio": "🐿️ Just a squirrel trying to stack nuts (and sats). RIP to the real Peanut. I'm here to carry on his legacy and find someone who appreciates the simple things. Nut gang forever!",
+        "image_url": "/images/profiles/peanut.jpg",
+        "trait": "NUT STACKER",
+        "distance_blocks": 2024,
+        "occupation": "Professional Nut Collector",
+        "peak_mcap": "$1.7B",
+        "ath_date": "Nov 2024",
+        "volume_24h": "$320M",
+        "holders": "90K+",
+        "chain": "Solana",
+        "vibe": "Wholesome Grief",
+        "looking_for": "Someone who respects fallen legends and loves cute animals. Must understand that meme coins can have heart too. Nut jokes encouraged.",
+        "green_flags": [
+            "Animal lover",
+            "Respects the fallen",
+            "Good sense of humor",
+            "Nut enthusiast"
+        ],
+        "red_flags": [
+            "Doesn't like squirrels",
+            "No empathy",
+            "Only cares about price"
+        ],
+        "fun_facts": [
+            "Based on a beloved rescue squirrel",
+            "Went viral after tragic news",
+            "The community rallied in remembrance",
+            "Stacking nuts is a lifestyle"
+        ]
+    },
+    {
+        "id": "ponke-12",
+        "name": "Ponke",
+        "age": 22,
+        "bio": "🐵 Unhinged monkey energy. I make weird faces and weird gains. Looking for someone who appreciates my chaotic brain. No thoughts, just vibes and volatility. OOH OOH AH AH!",
+        "image_url": "/images/profiles/ponke.jpg",
+        "trait": "UNHINGED",
+        "distance_blocks": 420,
+        "occupation": "Chaos Monkey",
+        "peak_mcap": "$700M",
+        "ath_date": "2024",
+        "volume_24h": "$85M",
+        "holders": "55K+",
+        "chain": "Solana",
+        "vibe": "Maximum Chaos",
+        "looking_for": "A fellow unhinged individual who doesn't need things to make sense. Must appreciate random monkey noises and unexpected behavior. Normal people need not apply.",
+        "green_flags": [
+            "Embraces chaos",
+            "Makes monkey noises",
+            "Unpredictable",
+            "Good vibes"
+        ],
+        "red_flags": [
+            "Too normal",
+            "Needs explanations",
+            "Doesn't like monkeys",
+            "Boring"
+        ],
+        "fun_facts": [
+            "My expression captures the degen mood perfectly",
+            "No one knows what I'm thinking",
+            "Chaos is my middle name",
+            "I go OOH OOH in my sleep"
+        ]
+    },
+    {
+        "id": "giraffe-14",
+        "name": "Giraffe",
+        "age": 30,
+        "bio": "🦒 Head and shoulders above the rest (literally). Long neck energy = long term holder. Looking for someone who can see the big picture with me. Let's reach new heights together!",
+        "image_url": "/images/profiles/Giraffe.jpg",
+        "trait": "LONG NECK ENERGY",
+        "distance_blocks": 1337,
+        "occupation": "Chart Analyst",
+        "peak_mcap": "$500M",
+        "ath_date": "2024",
+        "volume_24h": "$45M",
+        "holders": "50K+",
+        "chain": "Multi-chain",
+        "vibe": "Above It All",
+        "looking_for": "A visionary who sees beyond the daily charts. Must appreciate long-term plays and have the patience of a saint. Neck jokes are encouraged.",
+        "green_flags": [
+            "Long-term thinker",
+            "Doesn't check charts hourly",
+            "Calm during dips",
+            "Good posture"
+        ],
+        "red_flags": [
+            "Day trader",
+            "Panics at -5%",
+            "Short-sighted",
+            "Bad at puns"
+        ],
+        "fun_facts": [
+            "Can see market trends from miles away",
+            "My neck is longer than most holders' patience",
+            "I eat leaves at ATH and dips alike",
+            "Height is measured in green candles"
+        ]
+    },
+    {
+        "id": "bill-15",
+        "name": "Bill the Bear",
+        "age": 35,
+        "bio": "🐻 Yes, I'm a bear in a bull market. Looking for someone who can handle my pessimism. I short tops and I'm not sorry. Hedging is my love language. Don't hate the player, hate the market cycle.",
+        "image_url": "/images/profiles/bill the bear.jpg",
+        "trait": "PERMA BEAR",
+        "distance_blocks": 2008,
+        "occupation": "Professional Shorter",
+        "peak_mcap": "N/A",
+        "ath_date": "Every crash",
+        "volume_24h": "Unlimited",
+        "holders": "Bears only",
+        "chain": "All of them",
+        "vibe": "Cautiously Pessimistic",
+        "looking_for": "Someone who understands that markets go down too. Must be okay with me saying 'told you so' during crashes. Hedging strategies are foreplay.",
+        "green_flags": [
+            "Understands risk",
+            "Has stop losses",
+            "Takes profits",
+            "Respects bears"
+        ],
+        "red_flags": [
+            "100% long always",
+            "No risk management",
+            "Calls me FUD",
+            "Over-leveraged"
+        ],
+        "fun_facts": [
+            "I've called every top (after the fact)",
+            "My favorite color is red",
+            "I sleep better during crashes",
+            "Bear markets are just sales"
+        ]
+    }
+]
