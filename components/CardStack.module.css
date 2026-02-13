@@ -251,7 +251,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 8px;
         width: 100%;
         max-width: calc(100vw - 32px);
         margin-bottom: 8px;
@@ -261,6 +261,7 @@
         display: flex;
         align-items: center;
         gap: 6px;
+        width: 70%;
         background: white;
         border: 2px solid #21262E;
         border-radius: 20px;
@@ -296,16 +297,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 30%;
         background: linear-gradient(135deg, #FD297B 0%, #FF5864 100%);
         border: 2px solid #21262E;
         border-radius: 20px;
-        padding: 8px 16px;
+        padding: 8px 12px;
         font-size: 0.8rem;
         font-weight: 700;
         color: white;
         text-decoration: none;
         box-shadow: 0 4px 12px rgba(253, 41, 123, 0.3);
         transition: all 0.2s ease;
+        white-space: nowrap;
     }
 
     .buyButton:hover {
