@@ -51,6 +51,40 @@ export default function SwipeCard({ character, onSwipe, isTop, index, exitDirect
     const scale = isTop ? 1 : 1 - (index * 0.05);
     const yOffset = isTop ? 0 : index * -10;
 
+    // Compute exit animation values
+    const getExitAnimation = () => {
+        let exitX = 0;
+        let exitY = 0;
+        let exitRotate = 0;
+
+        if (exitDirection === 'left') {
+            exitX = -600;
+            exitRotate = -20;
+        } else if (exitDirection === 'right') {
+            exitX = 600;
+            exitRotate = 20;
+        } else if (exitDirection === 'up') {
+            exitY = -600;
+        } else {
+            // Fallback to drag-based exit
+            exitX = x.get() > 0 ? 600 : x.get() < 0 ? -600 : 0;
+            exitY = y.get() < -50 ? -600 : 0;
+            exitRotate = x.get() > 0 ? 20 : x.get() < 0 ? -20 : 0;
+        }
+
+        return {
+            x: exitX,
+            y: exitY,
+            rotate: exitRotate,
+            opacity: 0,
+            transition: {
+                duration: 0.8,
+                ease: [0.25, 0.1, 0.25, 1],
+                opacity: { duration: 0.6, delay: 0.2 }
+            }
+        };
+    };
+
     const handleDragEnd = (_: any, info: { offset: { x: number; y: number }; velocity: { x: number; y: number } }) => {
         if (isExpanded) return; // Don't swipe when expanded
 
@@ -89,40 +123,7 @@ export default function SwipeCard({ character, onSwipe, isTop, index, exitDirect
                 y: yOffset,
                 opacity: 1,
             }}
-            exit={() => {
-                // Determine exit direction - use exitDirection prop if provided (button click)
-                // Otherwise use the drag position
-                let exitX = 0;
-                let exitY = 0;
-                let exitRotate = 0;
-
-                if (exitDirection === 'left') {
-                    exitX = -600;
-                    exitRotate = -20;
-                } else if (exitDirection === 'right') {
-                    exitX = 600;
-                    exitRotate = 20;
-                } else if (exitDirection === 'up') {
-                    exitY = -600;
-                } else {
-                    // Fallback to drag-based exit
-                    exitX = x.get() > 0 ? 600 : x.get() < 0 ? -600 : 0;
-                    exitY = y.get() < -50 ? -600 : 0;
-                    exitRotate = x.get() > 0 ? 20 : x.get() < 0 ? -20 : 0;
-                }
-
-                return {
-                    x: exitX,
-                    y: exitY,
-                    rotate: exitRotate,
-                    opacity: 0,
-                    transition: {
-                        duration: 0.8,
-                        ease: [0.25, 0.1, 0.25, 1],
-                        opacity: { duration: 0.6, delay: 0.2 }
-                    }
-                };
-            }}
+            exit={getExitAnimation()}
             drag={isTop && !isExpanded}
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             dragElastic={0.9}
