@@ -232,9 +232,9 @@
         width: 100%;
         min-width: unset;
         max-width: calc(100vw - 32px);
-        height: calc(100vh - 280px);
-        max-height: 480px;
-        min-height: 350px;
+        height: calc(100vh - 340px);
+        max-height: 420px;
+        min-height: 300px;
     }
 
     .swipeHint {
@@ -382,9 +382,9 @@
 
     .cardArea {
         max-width: calc(100vw - 24px);
-        height: calc(100vh - 300px);
-        max-height: 420px;
-        min-height: 300px;
+        height: calc(100vh - 360px);
+        max-height: 380px;
+        min-height: 260px;
     }
 
     .mobileInfoPanel {
@@ -463,9 +463,9 @@
 @media (max-width: 360px) {
     .cardArea {
         max-width: calc(100vw - 20px);
-        height: calc(100vh - 320px);
-        max-height: 380px;
-        min-height: 280px;
+        height: calc(100vh - 380px);
+        max-height: 340px;
+        min-height: 240px;
     }
 
     .mobileInfoPanel {
