@@ -11,12 +11,24 @@ interface CardStackProps {
     characters: Character[];
     onSwipe: (characterId: string, direction: 'left' | 'right' | 'up') => void;
     onMatch?: (character: Character) => void;
+    contractAddress?: string;
 }
 
-export default function CardStack({ characters, onSwipe, onMatch }: CardStackProps) {
+export default function CardStack({ characters, onSwipe, onMatch, contractAddress = '0x1234...ABCD' }: CardStackProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [swipedCards, setSwipedCards] = useState<string[]>([]);
     const [exitDirection, setExitDirection] = useState<'left' | 'right' | 'up' | null>(null);
+    const [copied, setCopied] = useState(false);
+
+    const copyCA = async () => {
+        try {
+            await navigator.clipboard.writeText(contractAddress);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        } catch (err) {
+            console.error('Failed to copy:', err);
+        }
+    };
 
     const currentCharacters = characters.filter(c => !swipedCards.includes(c.id));
     const visibleCards = currentCharacters.slice(0, 3);
@@ -89,6 +101,29 @@ export default function CardStack({ characters, onSwipe, onMatch }: CardStackPro
 
     return (
         <div className={styles.container}>
+            {/* Mobile CA Bar - Only visible on mobile */}
+            <div className={styles.mobileCABar}>
+                <button className={styles.caButton} onClick={copyCA}>
+                    <span className={styles.caLabel}>CA:</span>
+                    <span className={styles.caAddress}>{contractAddress}</span>
+                    <span className={styles.copyIcon}>
+                        {copied ? '✓' : (
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                        )}
+                    </span>
+                </button>
+                <a 
+                    href="https://raydium.io/swap" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.buyButton}
+                >
+                    Buy Now 🚀
+                </a>
+            </div>
+
             <div className={styles.cardAreaWrapper}>
                 {/* Left Arrow - Nope */}
                 <div className={styles.swipeHint}>

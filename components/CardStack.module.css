@@ -94,8 +94,8 @@
     color: #656E7B;
 }
 
-/* Mobile Info Panel - Hidden on desktop */
-.mobileInfoPanel {
+/* Mobile CA Bar - Hidden on desktop */
+.mobileCABar {
     display: none;
 }
 
@@ -246,108 +246,71 @@
         width: 100%;
     }
 
-    /* Mobile Info Panel - Show on mobile */
-    .mobileInfoPanel {
-        display: block;
+    /* Mobile CA Bar - Show on mobile */
+    .mobileCABar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         width: 100%;
         max-width: calc(100vw - 32px);
-        background: white;
-        border: 2px solid #21262E;
-        border-radius: 12px;
-        padding: 12px 14px;
-        margin-top: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .mobileHeader {
-        margin-bottom: 10px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid #E0E0E0;
-    }
-
-    .mobileName {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #21262E;
-        display: flex;
-        align-items: baseline;
-        gap: 6px;
-        margin-bottom: 2px;
-    }
-
-    .mobileAge {
-        font-size: 1rem;
-        font-weight: 400;
-        color: #656E7B;
-    }
-
-    .mobileOccupation {
-        font-size: 0.8rem;
-        color: #656E7B;
-    }
-
-    .mobileStats {
-        display: flex;
-        gap: 6px;
-        margin-bottom: 10px;
-    }
-
-    .mobileStat {
-        flex: 1;
-        background: linear-gradient(135deg, #FD297B 0%, #FF5864 100%);
-        border: 2px solid #21262E;
-        border-radius: 8px;
-        padding: 6px 4px;
-        text-align: center;
-        color: white;
-    }
-
-    .mobileStatLabel {
-        display: block;
-        font-size: 0.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.3px;
-        opacity: 0.9;
-        margin-bottom: 2px;
-    }
-
-    .mobileStatValue {
-        display: block;
-        font-size: 0.7rem;
-        font-weight: 700;
-    }
-
-    .mobileFlags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
         margin-bottom: 8px;
     }
 
-    .mobileGreenFlag {
-        background: #E8F8F0;
-        color: #1B7D46;
-        padding: 4px 8px;
-        border-radius: 12px;
-        font-size: 0.65rem;
+    .caButton {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: white;
+        border: 2px solid #21262E;
+        border-radius: 20px;
+        padding: 8px 12px;
+        font-size: 0.75rem;
         font-weight: 600;
-        border: 1.5px solid #46D89A;
+        color: #21262E;
+        cursor: pointer;
+        transition: all 0.2s ease;
     }
 
-    .mobileVibe {
-        margin-bottom: 0;
+    .caButton:hover {
+        background: #F0F2F4;
     }
 
-    .mobileVibe span {
-        display: inline-block;
-        background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(253, 41, 123, 0.15));
-        color: #A855F7;
-        padding: 4px 10px;
-        border-radius: 12px;
-        font-size: 0.7rem;
-        font-weight: 600;
-        border: 1.5px solid rgba(168, 85, 247, 0.3);
+    .caLabel {
+        color: #FD297B;
+        font-weight: 700;
+    }
+
+    .caAddress {
+        color: #656E7B;
+        font-family: monospace;
+    }
+
+    .copyIcon {
+        display: flex;
+        align-items: center;
+        color: #656E7B;
+    }
+
+    .buyButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #FD297B 0%, #FF5864 100%);
+        border: 2px solid #21262E;
+        border-radius: 20px;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(253, 41, 123, 0.3);
+        transition: all 0.2s ease;
+    }
+
+    .buyButton:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(253, 41, 123, 0.4);
     }
 
     .emptyState {
@@ -387,50 +350,19 @@
         min-height: 320px;
     }
 
-    .mobileInfoPanel {
+    .mobileCABar {
         max-width: calc(100vw - 24px);
-        padding: 10px 12px;
+        gap: 8px;
     }
 
-    .mobileName {
-        font-size: 1.1rem;
+    .caButton {
+        padding: 6px 10px;
+        font-size: 0.7rem;
     }
 
-    .mobileAge {
-        font-size: 0.95rem;
-    }
-
-    .mobileStats {
-        gap: 4px;
-        margin-bottom: 8px;
-    }
-
-    .mobileStat {
-        padding: 5px 3px;
-        border-radius: 6px;
-    }
-
-    .mobileStatLabel {
-        font-size: 0.45rem;
-    }
-
-    .mobileStatValue {
-        font-size: 0.65rem;
-    }
-
-    .mobileFlags {
-        gap: 4px;
-        margin-bottom: 6px;
-    }
-
-    .mobileGreenFlag {
-        font-size: 0.6rem;
-        padding: 3px 6px;
-    }
-
-    .mobileVibe span {
-        font-size: 0.65rem;
-        padding: 3px 8px;
+    .buyButton {
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
 
     .emptyState {
@@ -468,35 +400,18 @@
         min-height: 300px;
     }
 
-    .mobileInfoPanel {
+    .mobileCABar {
         max-width: calc(100vw - 20px);
-        padding: 8px 10px;
+        gap: 6px;
     }
 
-    .mobileHeader {
-        margin-bottom: 8px;
-        padding-bottom: 6px;
+    .caButton {
+        padding: 5px 8px;
+        font-size: 0.65rem;
     }
 
-    .mobileName {
-        font-size: 1rem;
-    }
-
-    .mobileStats {
-        gap: 3px;
-    }
-
-    .mobileFlags {
-        gap: 3px;
-    }
-
-    .mobileGreenFlag {
-        font-size: 0.55rem;
-        padding: 2px 5px;
-    }
-
-    /* Only show 2 flags on extra small */
-    .mobileFlags .mobileGreenFlag:nth-child(n+3) {
-        display: none;
+    .buyButton {
+        padding: 5px 10px;
+        font-size: 0.7rem;
     }
 }
