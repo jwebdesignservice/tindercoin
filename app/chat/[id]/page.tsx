@@ -295,8 +295,9 @@ export default function ChatPage() {
             </main>
             <MobileNav activeItem="chat" onNavigate={(item) => {
                 if (item === 'discover') router.push('/');
+                if (item === 'search') router.push('/');
                 if (item === 'profile') router.push('/profile');
-                if (item === 'matches') router.push('/matches');
+                if (item === 'matches' || item === 'chat') router.push('/matches');
             }} />
         </>
     );

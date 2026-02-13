@@ -156,7 +156,8 @@ export default function Home() {
     const handleMobileNavigate = (item: 'discover' | 'search' | 'matches' | 'chat' | 'profile') => {
         switch (item) {
             case 'discover':
-                // Already on home
+            case 'search':
+                // Already on home / search goes to home
                 break;
             case 'matches':
             case 'chat':

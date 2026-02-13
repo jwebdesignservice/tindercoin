@@ -173,8 +173,11 @@ export default function MatchesPage() {
             </main>
             <MobileNav activeItem="matches" onNavigate={(item) => {
                 if (item === 'discover') router.push('/');
+                if (item === 'search') router.push('/');
                 if (item === 'profile') router.push('/profile');
-                if (item === 'chat') router.push('/matches');
+                if (item === 'matches' || item === 'chat') {
+                    // Already on matches page
+                }
             }} />
         </>
     );

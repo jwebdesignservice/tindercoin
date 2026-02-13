@@ -264,7 +264,11 @@ export default function ProfilePage() {
             </main>
             <MobileNav activeItem="profile" onNavigate={(item) => {
                 if (item === 'discover') router.push('/');
-                if (item === 'matches') router.push('/matches');
+                if (item === 'search') router.push('/');
+                if (item === 'matches' || item === 'chat') router.push('/matches');
+                if (item === 'profile') {
+                    // Already on profile page
+                }
             }} />
         </>
     );
