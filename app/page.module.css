@@ -1,7 +1,7 @@
 .main {
-    min-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
     background: #F0F2F4;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .layout {
